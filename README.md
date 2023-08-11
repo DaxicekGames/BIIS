@@ -9,5 +9,14 @@ Text based OS for Arduino platform
 - 1x Buzzer
 - 1x 10K ohm resistor
 
-# Dependencies:
-- 
+# Libraries:
+- stdlib.h
+- dht.h
+- stdio.h
+- Wire.h
+- LiquidCrystal_I2C.h
+- string.h
+- EEPROM.h
+- Time.h
+- TimeLib.h
+- math.h
