@@ -604,13 +604,16 @@ void longPress() {
           pressnoise(80, 100); 
           presstime = 0;
           
+          double pow1 = atoi(Cnum1);
+          double pow2 = atoi(Cnum2);
+          
           if (Copearation[0] == '+') result = atoi(Cnum1) + atoi(Cnum2);
           if (Copearation[0] == '-') result = atoi(Cnum1) - atoi(Cnum2);
           if (Copearation[0] == '*' || Copearation[0] == '.') result = atoi(Cnum1) * atoi(Cnum2);
           if (Copearation[0] == '/' || Copearation[0] == ':') result = atoi(Cnum1) / atoi(Cnum2);
           if (Copearation[0] == '%') result = atoi(Cnum1) % atoi(Cnum2);
-          if (Copearation[0] == 'V') result = pow(atoi(Cnum2), 1/atoi(Cnum1));
-          if (Copearation[0] == '^') result = pow(atoi(Cnum1), atoi(Cnum2));
+          if (Copearation[0] == 'V') result = pow(pow2, 1/pow1);
+          if (Copearation[0] == '^') result = pow(pow1, pow2);
 
           sprintf(charseq, "COM %d", result);
           printpos = 4 + sizeof(result);
