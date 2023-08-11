@@ -26,6 +26,11 @@ Text based OS for Arduino platform
 - To delete last character write 4 dashes (----)
 - To exit program, press and hold button for a long time (~1000ms)
 
+## Timing:
+- Dot (.) = ~<100ms
+- Dash (-) = ~>100ms
+- Long press (LONG) = ~>1000ms
+
 ## Commands and programs:
 - TEMP; (-/./--/.--./-.-.-.)                                                - Show temperature and humidity
 - SW; (.../.--/-.-.-.)                                                      - Stopwatch
