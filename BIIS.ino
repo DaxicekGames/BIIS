@@ -714,113 +714,119 @@ void helpmenu(int page) {
     }
     if (page == 1) {
       lcd.setCursor(0, 0);
-      lcd.print("TEMP;       1/18.");
+      lcd.print("TEMP;       1/19.");
       lcd.setCursor(0, 1);
       lcd.print("Show temp & hum .");
     }
     if (page == 2) {
       lcd.setCursor(0, 0);
-      lcd.print("OFF;        2/18.");
+      lcd.print("OFF;        2/19.");
       lcd.setCursor(0, 1);
       lcd.print("Shutdown BIIS   .");
     }
     if (page == 3) {
       lcd.setCursor(0, 0);
-      lcd.print("SW;         3/18.");
+      lcd.print("SW;         3/19.");
       lcd.setCursor(0, 1);
       lcd.print("Stopwatch       .");
     }
     if (page == 4) {
       lcd.setCursor(0, 0);
-      lcd.print("CURSOR;     4/18.");
+      lcd.print("CURSOR;     4/19.");
       lcd.setCursor(0, 1);
       lcd.print("Toggle cursor   .");
     }
     if (page == 5) {
       lcd.setCursor(0, 0);
-      lcd.print("BUZZER;     5/18.");
+      lcd.print("BUZZER;     5/19.");
       lcd.setCursor(0, 1);
       lcd.print("Toggle buzzer   .");
     }
     if (page == 6) {
       lcd.setCursor(0, 0);
-      lcd.print("ABOUT;      6/18.");
+      lcd.print("ABOUT;      6/19.");
       lcd.setCursor(0, 1);
       lcd.print("Show version    .");
     }
     if (page == 7) {
       lcd.setCursor(0, 0);
-      lcd.print("SLEEP;      7/18.");
+      lcd.print("SLEEP;      7/19.");
       lcd.setCursor(0, 1);
       lcd.print("Turn off lcd    .");
     }
     if (page == 8) {
       lcd.setCursor(0, 0);
-      lcd.print("HELP;       8/18.");
+      lcd.print("HELP;       8/19.");
       lcd.setCursor(0, 1);
       lcd.print("Show commands   .");
     }
     if (page == 9) {
       lcd.setCursor(0, 0);
-      lcd.print("PLAY pich;  9/18.");
+      lcd.print("PLAY pich;  9/19.");
       lcd.setCursor(0, 1);
       lcd.print("Play with buzzer.");
     }
     if (page == 10) {
       lcd.setCursor(0, 0);
-      lcd.print("SHELP;     10/18.");
+      lcd.print("SHELP;     10/19.");
       lcd.setCursor(0, 1);
       lcd.print("Togg start help .");
     }
     if (page == 11) {
       lcd.setCursor(0, 0);
-      lcd.print("BKLIGHT;   11/18.");
+      lcd.print("BKLIGHT;   11/19.");
       lcd.setCursor(0, 1);
       lcd.print("Togg backlight  .");
     }
     if (page == 12) {
       lcd.setCursor(0, 0);
-      lcd.print("RESET;     12/18.");
+      lcd.print("RESET;     12/19.");
       lcd.setCursor(0, 1);
       lcd.print("Reset memory    .");
     }
     if (page == 13) {
       lcd.setCursor(0, 0);
-      lcd.print("RESTART;   13/18.");
+      lcd.print("RESTART;   13/19.");
       lcd.setCursor(0, 1);
       lcd.print("Restart BIIS    .");
     }
     if (page == 14) {
       lcd.setCursor(0, 0);
-      lcd.print("DICE;      14/18.");
+      lcd.print("DICE;      14/19.");
       lcd.setCursor(0, 1);
       lcd.print("Roll simple dice.");
     }
     if (page == 15) {
       lcd.setCursor(0, 0);
-      lcd.print("RNG  max;  15/18.");
+      lcd.print("RNG  max;  15/19.");
       lcd.setCursor(0, 1);
       lcd.print("Gen random num  .");
     }
     if (page == 16) {
       lcd.setCursor(0, 0);
-      lcd.print("STIMER s;  16/18.");
+      lcd.print("STIMER s;  16/19.");
       lcd.setCursor(0, 1);
       lcd.print("Timer (sec)     .");
     }
     if (page == 17) {
       lcd.setCursor(0, 0);
-      lcd.print("MTIMER m;  17/18.");
+      lcd.print("MTIMER m;  17/19.");
       lcd.setCursor(0, 1);
       lcd.print("Timer (min)     .");
     }
     if (page == 18) {
       lcd.setCursor(0, 0);
-      lcd.print("TIME;      18/18.");
+      lcd.print("TIME;      18/19.");
       lcd.setCursor(0, 1);
       lcd.print("Show date & time.");
     }
-    if (page > 18) {
+    if (page == 19) {
+      lcd.setCursor(0, 0);
+      lcd.print("COM x o y;19/19.");
+      lcd.setCursor(0, 1);
+      lcd.print("Calculator +-/*.");
+    }
+    if (page > 19) {
       helpPage = -1;
       gohome();
     }
