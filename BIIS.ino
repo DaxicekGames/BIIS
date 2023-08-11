@@ -10,7 +10,7 @@
 #include <math.h>
 
 
-const char version[15] = "10.08.2023";
+const char version[15] = "11.08.2023";
 
 // Konfigurace pinů
 const int buttpin = 7;
@@ -335,7 +335,8 @@ char morseToChar(char *morse) {
     if (strcmp(morse, "..--.-") == 0) return '_';
     if (strcmp(morse, ".-..-.") == 0) return '"';
     if (strcmp(morse, ".--.-.") == 0) return '@';
-    if (strcmp(morse, ".---.---.-") == 0) return '%';
+    if (strcmp(morse, ".---.---.-") == 0) return '#';
+    if (strcmp(morse, ".---.---.--") == 0) return '%';
 
 }
 
